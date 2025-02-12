@@ -1,5 +1,5 @@
 (function() {
-  emailjs.init("F-4oA0YYUaQd5CkLn");
+  emailjs.init("ZT2gA49km0Kms_3Z6");
 })();
 
 // Track the scroll position and highlight active section in navigation
@@ -232,7 +232,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
   const email = document.getElementById('email').value;
   const message = document.getElementById('message').value;
 
-  emailjs.send("service_8o5qvyc", "template_pzb4t6m", {
+  emailjs.send("service_0vyggxj", "template_xl2mx3b", {
     name: name,
     email: email,
       message: message,
