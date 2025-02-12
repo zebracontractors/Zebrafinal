@@ -1,0 +1,243 @@
+<style>
+    .container {
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      padding: 13px 17px 35px;
+    }
+  
+    .header {
+      background-color: #fff;
+      padding: 27px 7px;
+    }
+  
+    @media (max-width: 991px) {
+      .header {
+        max-width: 100%;
+      }
+    }
+  
+    .header-content {
+      display: flex;
+      gap: 20px;
+    }
+  
+    @media (max-width: 991px) {
+      .header-content {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+    }
+  
+    .header-left {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 84%;
+      margin-left: 0;
+    }
+  
+    @media (max-width: 991px) {
+      .header-left {
+        width: 100%;
+      }
+    }
+  
+    .header-image-container {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+    }
+  
+    @media (max-width: 991px) {
+      .header-image-container {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    }
+  
+    .header-image {
+      aspect-ratio: 2.17;
+      object-fit: cover;
+      width: 100%;
+    }
+  
+    @media (max-width: 991px) {
+      .header-image {
+        max-width: 100%;
+      }
+    }
+  
+    .header-icons {
+      border: 2px solid rgba(0, 0, 0, 1);
+      background-color: #fff;
+      align-self: flex-end;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      justify-content: space-between;
+      padding: 1px 12px;
+    }
+  
+    @media (max-width: 991px) {
+      .header-icons {
+        margin-right: 10px;
+      }
+    }
+  
+    .header-icon {
+      aspect-ratio: 1;
+      object-fit: contain;
+      width: 51px;
+      align-self: stretch;
+      margin: auto 0;
+    }
+  
+    .header-divider {
+      border: 2px solid rgba(0, 0, 0, 1);
+      background-color: #000;
+      align-self: flex-start;
+      width: 2px;
+      height: 72px;
+    }
+  
+    .header-right {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 16%;
+      margin-left: 20px;
+    }
+  
+    @media (max-width: 991px) {
+      .header-right {
+        width: 100%;
+      }
+    }
+  
+    .header-logo {
+      display: flex;
+      margin-top: 58px;
+      flex-direction: column;
+      color: #000;
+      text-align: center;
+    }
+  
+    @media (max-width: 991px) {
+      .header-logo {
+        margin-top: 40px;
+      }
+    }
+  
+    .header-logo-text {
+      font: 900 30px Lexend Tera, sans-serif;
+    }
+  
+    .header-nav {
+      display: flex;
+      margin-top: 17px;
+      flex-direction: column;
+      font-size: 20px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  
+    .header-nav-item {
+      font: 18px Lexend Tera, sans-serif;
+    }
+  
+    .header-nav-contractors {
+      align-self: flex-start;
+      margin-left: 15px;
+    }
+  
+    @media (max-width: 991px) {
+      .header-nav-contractors {
+        margin-left: 10px;
+      }
+    }
+  
+    .header-nav-about {
+      align-self: center;
+      margin-top: 129px;
+    }
+  
+    @media (max-width: 991px) {
+      .header-nav-about {
+        margin-top: 40px;
+      }
+    }
+  
+    .header-nav-services {
+      align-self: flex-start;
+      margin: 37px 0 0 18px;
+    }
+  
+    @media (max-width: 991px) {
+      .header-nav-services {
+        margin-left: 10px;
+      }
+    }
+  
+    .header-nav-portfolio {
+      margin-top: 37px;
+    }
+  
+    .header-nav-team {
+      align-self: center;
+      margin-top: 37px;
+    }
+  
+    .header-nav-contact {
+      margin-top: 36px;
+    }
+  
+    .hero-text {
+      color: #000;
+      margin-top: 7px;
+      font: 700 24px Lexend Tera, sans-serif;
+    }
+  
+    @media (max-width: 991px) {
+      .hero-text {
+        max-width: 100%;
+      }
+    }
+  </style>
+  
+  <div class="container">
+    <header class="header">
+      <div class="header-content">
+        <div class="header-left">
+          <div class="header-image-container">
+            <img src="header-image.jpg" alt="Header image" class="header-image" />
+            <div class="header-icons">
+              <img src="header-icon-1.png" alt="Header icon" class="header-icon" />
+              <div class="header-divider" aria-hidden="true"></div>
+              <img src="header-icon-2.png" alt="Header icon" class="header-icon" />
+            </div>
+          </div>
+        </div>
+        <div class="header-right">
+          <div class="header-logo">
+            <div class="header-logo-text">ZEBRA</div>
+            <nav class="header-nav">
+              <div class="header-nav-item header-nav-contractors">Contractors</div>
+              <div class="header-nav-item header-nav-about">about</div>
+              <div class="header-nav-item header-nav-services">Services</div>
+              <div class="header-nav-item header-nav-portfolio">portfolio</div>
+              <div class="header-nav-item header-nav-team">Team</div>
+              <div class="header-nav-item header-nav-contact">contact us</div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <h1 class="hero-text">
+        NO DREAM IS EVER CHASE ALONE<br />
+        YOU DREAM IT WE BUILD IT
+      </h1>
+    </section>
+  </div>
